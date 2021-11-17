@@ -1,6 +1,6 @@
 // Import the function to config and init the firebase app
 import { initializeApp } from "firebase/app";
-// Import the function to pull in the firebae realtime db service:
+// Import the function to pull in the firebase realtime db service:
 import { getDatabase } from "firebase/database";
 
 // Your web app's Firebase configuration
@@ -15,8 +15,8 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+const firebase = initializeApp(firebaseConfig);
 
-const realtime = getDatabase(app);
+const realtime = getDatabase(firebase);
 
 export default realtime;
