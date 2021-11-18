@@ -1,7 +1,7 @@
 import realtime from "./firebase";
 import TodoItem from "./TodoItem";
 import { useEffect, useState } from "react";
-import { ref, push, onValue } from "firebase/database";
+import { ref, onValue, push } from "firebase/database";
 
 const TodoList = () => {
   // State to hold todo's
@@ -26,7 +26,13 @@ const TodoList = () => {
     });
   }, []);
 
-  return <ul></ul>;
+  return (
+    <ul>
+      {todoList
+        ? todoList.map((todo, index) => <TodoItem todo={todo} key={index} />)
+        : ""}
+    </ul>
+  );
 };
 
 export default TodoList;
