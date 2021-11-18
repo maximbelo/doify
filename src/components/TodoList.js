@@ -1,7 +1,7 @@
 import realtime from "./firebase";
 import TodoItem from "./TodoItem";
 import { useEffect, useState } from "react";
-import { ref, onValue, push } from "firebase/database";
+import { ref, onValue } from "firebase/database";
 
 const TodoList = () => {
   // State to hold todo's
