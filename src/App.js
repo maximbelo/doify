@@ -1,5 +1,6 @@
 import "./App.scss";
 import TodoForm from "./components/TodoForm";
+import TodoList from "./components/TodoList";
 
 function App() {
   // // We call useEffect with an EMPTY dependancy array which means it will only execute callback function one time, when the component first mounts.
@@ -30,6 +31,7 @@ function App() {
     <div className="innerWrapper">
       <h1>Doify!</h1>
       <TodoForm />
+      <TodoList />
     </div>
   );
 }

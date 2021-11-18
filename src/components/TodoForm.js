@@ -3,8 +3,6 @@ import { useState } from "react";
 import { ref, push } from "firebase/database";
 
 const TodoForm = () => {
-  // State to hold todo's
-  const [todo, setTodo] = useState([]);
   // State to hold the user input
   const [userInput, setUserInput] = useState("");
 
@@ -25,7 +23,6 @@ const TodoForm = () => {
 
       // We use push, passing it our dbRef and the value we want to store
       push(todoListRef, todo);
-
       // Reset user input state back to an empty string
       setUserInput("");
     } else {
