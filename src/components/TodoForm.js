@@ -6,10 +6,12 @@ const TodoForm = () => {
   // State to hold the user input
   const [userInput, setUserInput] = useState("");
 
+  // Function to change toDo
   const handleChange = (e) => {
     setUserInput(e.target.value);
   };
 
+  // Function to update task on form submission
   const handleSubmit = (e) => {
     e.preventDefault();
     if (userInput) {
@@ -34,7 +36,7 @@ const TodoForm = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <label htmlFor="userTask">Things to do:</label>
+      <label htmlFor="userTask"></label>
       <input
         type="text"
         id="userTask"

@@ -1,4 +1,10 @@
-.innerWrapper {
+.mainContent {
   max-width: 1650px;
   margin: 0 auto;
+}
+
+.innerWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
