@@ -1,9 +1,8 @@
 import realtime from "./firebase";
 import { useState } from "react";
 import { ref, update, remove } from "firebase/database";
-import { FiCheckSquare } from "react-icons/fi";
 import { RiDeleteBinFill } from "react-icons/ri";
-import { HiPencilAlt } from "react-icons/hi";
+import { HiPencilAlt, HiOutlineCheckCircle } from "react-icons/hi";
 
 const TodoItem = ({ todo }) => {
   // State to hold updated task
@@ -46,7 +45,7 @@ const TodoItem = ({ todo }) => {
         disabled={todo.completed ? true : false}
       />
       <button className="completeTodoBtn" onClick={completeTodo}>
-        <FiCheckSquare />
+        <HiOutlineCheckCircle />
       </button>
       <button className="editTodoBtn" onClick={editTodo}>
         <HiPencilAlt />

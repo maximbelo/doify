@@ -2,6 +2,7 @@ html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  font-size: 125%;
 }
 
 body {
@@ -267,4 +268,37 @@ template {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.completeTodoBtn,
+.editTodoBtn,
+.deleteTodoBtn {
+  display: flex;
+  align-items: center;
+  margin: 0 1rem;
+  font-size: 2rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.list {
+  width: 400px;
+}
+
+li {
+  display: flex;
+  list-style: none;
+}
+
+.completeTodoBtn {
+  color: #0ca10c;
+}
+
+.editTodoBtn {
+  color: #ca6702;
+}
+
+.deleteTodoBtn {
+  color: #ff6347;
 }/*# sourceMappingURL=App.css.map */

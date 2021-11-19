@@ -1,2 +1,28 @@
 @import "./sass/setup";
+@import "./sass/vars";
 @import "./sass/general";
+
+// ===========================================
+// .mainContent
+// ===========================================
+
+.list {
+  width: 400px;
+}
+
+li {
+  display: flex;
+  list-style: none;
+}
+
+.completeTodoBtn {
+  color: $green;
+}
+
+.editTodoBtn {
+  color: $orange;
+}
+
+.deleteTodoBtn {
+  color: $red;
+}
