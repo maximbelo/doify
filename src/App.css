@@ -259,9 +259,8 @@ template {
   overflow: hidden;
 }
 
-.mainContent {
-  max-width: 1650px;
-  margin: 0 auto;
+body {
+  background: #ffe4c4;
 }
 
 .innerWrapper {
