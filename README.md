@@ -1,4 +1,4 @@
 # Doify.
-A simple, yet elegant to-do app!
+A simple, yet elegant Todo app!
 
 
