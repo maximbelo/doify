@@ -4,11 +4,16 @@ import TodoList from "./components/TodoList";
 
 function App() {
   return (
-    <div className="innerWrapper">
-      <h1>Doify!</h1>
-      <TodoForm />
-      <TodoList />
-    </div>
+    <section className="todoApp">
+      <div className="innerWrapper">
+        <h1>Doify!</h1>
+        <TodoForm />
+        <TodoList />
+      </div>
+      <footer>
+        <p>Created by Maxim Belomestnov.</p>
+      </footer>
+    </section>
   );
 }
 

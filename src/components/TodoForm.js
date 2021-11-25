@@ -1,6 +1,7 @@
 import realtime from "./firebase";
 import { useState } from "react";
 import { ref, push } from "firebase/database";
+import { HiPlusCircle } from "react-icons/hi";
 
 const TodoForm = () => {
   // State to hold the user input
@@ -44,7 +45,9 @@ const TodoForm = () => {
         value={userInput}
         placeholder="Enter a Todo..."
       />
-      <button>Add it!</button>
+      <button className="addTodoBtn">
+        <HiPlusCircle />
+      </button>
     </form>
   );
 };

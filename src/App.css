@@ -287,6 +287,19 @@ body {
   cursor: pointer;
 }
 
+.addTodoBtn {
+  display: flex;
+  margin: 0 1rem;
+  font-size: 2rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+}
+
 .list {
   width: 400px;
 }

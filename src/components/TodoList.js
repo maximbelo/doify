@@ -22,7 +22,6 @@ const TodoList = () => {
         tasks.push({ id, ...myData[id] });
       }
       setTodoList(tasks);
-      console.log(tasks);
     });
   }, []);
 

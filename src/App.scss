@@ -6,6 +6,19 @@
 // .mainContent
 // ===========================================
 
+.addTodoBtn {
+  display: flex;
+  margin: 0 1rem;
+  font-size: 2rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+}
+
 .list {
   width: 400px;
 }
@@ -25,4 +38,9 @@ li {
 
 .deleteTodoBtn {
   color: $red;
+}
+
+footer {
+  text-align: center;
+  margin: 0.5rem 0;
 }
