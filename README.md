@@ -1,5 +1,5 @@
 # Doify.
 A simple, yet elegant Todo app!
 
-Live link: doify.netlify.app
+Live link: https://doify.netlify.app/
 
